@@ -1,0 +1,127 @@
+/* WelcomePage.css */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    /* Ensure that the container can serve as a positioning context */
+    padding-bottom: 1px;
+    /* Add some padding to ensure the content doesn't overlap the footer */
+}
+
+.welcome-container h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.welcome-container button {
+    width: 200px;
+    height: 57px;
+    background-color: transparent;
+    /* Ensure the background starts transparent */
+    color: white;
+    /* Text color remains white */
+    font-size: 20px;
+    border: 2px solid white;
+    /* White border to be visible initially */
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    /* Needed for the absolute positioning of the pseudo-element */
+    overflow: hidden;
+    /* Ensures the pseudo-element does not overflow the button boundaries */
+    transition: color 0.2s ease;
+    /* Transition for text color */
+}
+
+
+.welcome-container button::before {
+    content: '';
+    /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* Start with no width to be invisible initially */
+    height: 100%;
+    /* Full height of the button */
+    background-color: #babbbc;
+    /* The fill color */
+    transition: width 0.7s ease;
+    /* Animation for the fill effect */
+    border-radius: 8px;
+    /* Match the button's border-radius */
+}
+
+.welcome-container button:hover::before {
+    width: 100%;
+    /* Expand to full width on hover */
+}
+
+.welcome-container button span {
+    position: relative;
+    z-index: 1;
+    /* Ensure the text is above the ::before pseudo-element */
+}
+
+.footer {
+    position: absolute;
+    /* Position it at the bottom */
+    bottom: 60px;
+    /* Spacing from the bottom */
+    color: rgb(211, 211, 211);
+    /* Text color */
+    font-size: 16px;
+    /* Adjust font size as needed */
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 768px) {
+    .welcome-container h1 {
+        font-size: 38px;
+        /* Smaller font size for the main heading */
+        margin-bottom: 15px;
+        /* Adjust spacing */
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .welcome-container button {
+        width: 190px;
+        /* Smaller width for the button */
+        height: 55px;
+        /* Smaller height for the button */
+        font-size: 18px;
+        /* Smaller font size for the button text */
+        border-radius: 6px;
+        /* Adjusted border radius */
+    }
+
+    .welcome-container button::before {
+        border-radius: 6px;
+        /* Match the button's adjusted border-radius */
+    }
+
+    .footer {
+        bottom: 30px;
+        /* Adjust spacing from the bottom */
+        font-size: 14px;
+        /* Smaller font size for footer text */
+    }
+
+    /* Adjust the padding-bottom of the container to give more room to the footer */
+    .welcome-container {
+        padding-bottom: 80px;
+        /* Increased padding to prevent overlap with the footer */
+    }
+}

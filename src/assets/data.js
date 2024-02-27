@@ -1,0 +1,42 @@
+export const data = [
+  {
+    question: "What is my full name?",
+    option1: "Mohammad Ameer Khan",
+    option2: "Ameer Mohammad Chaudhry",
+    option3: "Mohammad Ameer Rizwan",
+    option4: "Ameer Mohammad Khan",
+    ans: 4, 
+  },
+  {
+    question: "When is my birthday?",
+    option1: "Novemeber 12",
+    option2: "November 6",
+    option3: "November 9",
+    option4: "November 18",
+    ans: 3, 
+  },
+  {
+    question: "Where was I born?",
+    option1: "Karachi",
+    option2: "Lahore",
+    option3: "Islamabad",
+    option4: "Somewhere in Canada LOL",
+    ans: 2, 
+  },
+  {
+    question: "What's my favourite day to workout?",
+    option1: "Monday - Back/Biceps",
+    option2: "Tuesday - Chest/Triceps",
+    option3: "Wednesday - Shoulder/Legs",
+    option4: "Sunday - I just wanna sleep",
+    ans: 1, 
+  },
+  {
+    question: "What's my dream car?",
+    option1: "Lamborghini SVJ",
+    option2: "Porsche 911 GT3",
+    option3: "Bugatti Chiron Supersport",
+    option4: "Audi R8 Roadster",
+    ans: 1, 
+  },
+];

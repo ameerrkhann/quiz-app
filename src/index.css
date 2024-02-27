@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  
+  background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  
+  font-family: 'poppins';
+  font-weight: 300;
+}

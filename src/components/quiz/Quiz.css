@@ -1,0 +1,151 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* or any color that matches your design */
+    font-family: 'Montserrat', sans-serif; /* This should be consistent throughout the app */
+  }
+  
+  /* Container Styles */
+  .container {
+    width: 600px;
+    background: whitesmoke;
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 40px 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow for depth */
+    /* Remove margin-top to allow flexbox to center the container vertically */
+  }
+  
+
+/* Header and Lines */
+.container h1 {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+}
+
+.container hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 0;
+    height: 1px;
+    background: #eaeaea;
+}
+
+/* Question Styles */
+.container h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+.container ul li {
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container ul li:hover {
+    background: #e9e9e9;
+}
+
+/* Button Styles */
+.container button {
+    width: 100%;
+    height: 50px;
+    background-color: #0052cc;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #003d99;
+}
+
+/* Status and Score Styles */
+.container .index {
+    font-size: 18px;
+    text-align: center;
+}
+
+.container .correct {
+    background-color: #c8e6c9;
+    border-color: #2e7d32;
+}
+
+.container .wrong {
+    background-color: #ffcdd2;
+    border-color: #d32f2f;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Responsive Media Query for Phones */
+@media screen and (max-width: 600px) {
+    .container {
+      width: 90%; /* Adjust width to be more responsive on smaller screens */
+      padding: 20px; /* Adjust padding to fit smaller screens */
+      /* ...other styles... */
+    }
+  
+    .container h1 {
+      font-size: 24px; /* Smaller font size for the main heading */
+      /* ...other styles... */
+    }
+  
+    .container h2 {
+      font-size: 18px; /* Smaller font size for questions */
+      /* ...other styles... */
+    }
+  
+    .container ul li {
+      font-size: 16px; /* Smaller font size for list items */
+      height: 40px; /* Adjust height for smaller screens */
+      /* ...other styles... */
+    }
+  
+    .container button {
+      height: 40px; /* Adjust button height as needed */
+      font-size: 16px; /* Smaller font size for button text */
+      /* ...other styles... */
+    }
+  
+    .container .index {
+      font-size: 16px; /* Adjust font size for index */
+      /* ...other styles... */
+    }
+  
+    .footer {
+      font-size: 14px; /* Adjust font size for footer */
+      /* ...other styles... */
+    }
+  }
